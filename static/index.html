@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" content="text/html;" >
+<head>
+    <title>User Data</title>
+
+    <style type="text/css">
+
+        .user-data-form{
+            float: left;
+            display: block;
+        }
+
+        .user-data__field {
+            clear: both;
+            text-align: right;
+            line-height: 25px;
+        }
+
+        label {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .user-data__button {
+            clear: both;
+            text-align: center;
+            padding-top: 20px;;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="user-data-form">
+        <form action = "/userData" method = "GET">
+            <div class="user-data__field">
+                <label for="user">User</label>
+                <input type="text" name="user" id="user" />
+            </div>
+
+            <div class="user-data__field">
+                <label for="id">Id</label>
+                <input type="text" name="id" id="id" />
+            </div>
+
+            <div class="user-data__button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
+
+</body>
